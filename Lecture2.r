@@ -1,6 +1,5 @@
 data(Howell1,package='rethinking')
 
-install.packages('brms')
 library(brms)
 
 # Fit a Bayesian model without setting priors (it'll do the median for us)
