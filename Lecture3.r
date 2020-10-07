@@ -1,15 +1,11 @@
-<<<<<<< HEAD
-# Load in modules
 
-=======
->>>>>>> 803f02119e35db43d70fdcd1f1d632c8b04d1ba5
+# Load in modules
 library(brms)
 library(loo)
 library(bayesplot)
 
 data("stackloss")
 
-<<<<<<< HEAD
 # Fit all variables in stackloss
 
 fit <- brm(stack.loss ~ ., data=stackloss,family=gaussian())
@@ -49,8 +45,8 @@ ppc_ecdf_overlay(y=stackloss$stack.loss,yrep=yrep1)
 ppc_dens_overlay(y=stackloss$stack.loss, yrep=yrep)
 
 ppc_stat(y=stackloss$stack.loss,stat=sd,yrep=yrep)
-=======
 fir <- brm(stack.loss ~ ., data=stackloss,family=gaussian())
 
 summary(fir)
->>>>>>> 803f02119e35db43d70fdcd1f1d632c8b04d1ba5
+
+
